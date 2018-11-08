@@ -1,0 +1,44 @@
+@media (min-width: 544px) {
+    @include container--544();
+    @include subheader--544();
+    @include page--544();
+    // @include projects--544();
+}
+
+@media (min-width:640px) {
+    @include notfound--640();
+}
+// small screen size (sm)
+@media (min-width:700px) {
+    @include site-header--700();
+}
+
+@media (min-width: 768px) {
+    @include container--768();
+    @include subheader--768();
+    @include page--768();
+    @include footer--768();
+    // @include projects--768();
+}
+
+// medium screen size (md)
+@media (min-width: 992px) {
+    @include container--992();
+    @include site-header--992();
+    @include subheader--992();
+    @include page--992();
+}
+
+@media (min-width: 1200px) {
+    @include page--1200();
+}
+
+@media (min-width: 1300px) {
+    @include container--1300();
+    @include subheader--1300();
+    @include page--1300();
+}
+
+@media only screen and (max-width: 750px) {
+    @include page-only-max-750();
+}

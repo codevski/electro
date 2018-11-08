@@ -1,0 +1,129 @@
+
+.site-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+.site-header {
+  color: #74b1be;
+  background-color: #2f3241;
+  border-bottom-color: #1a1b23;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+.site-header a {
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.site-header a.active,
+.site-header a:hover {
+  color: #9feaf9;
+}
+
+.site-header a:active {
+  color: #6798a2;
+}
+
+@mixin site-header--700() {
+  .site-header {
+      text-align: center;
+  }
+  .site-header-logo {
+      float: left;
+  }
+  
+  .site-header-nav {
+      float: right;
+      line-height: 2.3;
+  }
+  .site-header-logo,
+  .site-header-nav {
+      float: none;
+  }
+}
+
+@mixin site-header--992() {
+  .site-header {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  .site-header-logo {
+      float: left;
+  }
+  .site-header-nav {
+      float: right;
+  }
+}
+
+.site-header-logo {
+  font-size: 22px;
+}
+
+.site-header-nav {
+  margin-top: 0;
+  min-height: 30px;
+  line-height: 30px;
+}
+
+.site-header-nav-item {
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  color: #555;
+}
+
+.site-header-nav-item.active,
+.site-header-nav-item:active,
+.site-header-nav-item:hover {
+  border-bottom-color: #9feaf9;
+  color: #333;
+  text-decoration: none;
+}
+
+.site-header-nav-item+.site-header-nav-item {
+  margin-left: 20px;
+}
+
+.fab {
+  font-size: 1.6em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 7px 11px;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.site-header-nav-item.bordered {
+  border: 1px solid #9feaf9;
+  border-radius: 3px;
+  padding: 0 7px;
+  opacity: 0.7;
+  font-size: 12px;
+  line-height: 2;
+  bottom: 3px;
+}
+
+.site-header-nav-item.active {
+  color: #333;
+}

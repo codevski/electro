@@ -1,0 +1,85 @@
+.subhead {
+    position: relative;
+    text-align: center;
+    border: 1px solid #e0e5e6;
+    background-color: #f6f8f8;
+    padding: 12px;
+}
+
+.subhead h1 {
+    margin: 0 0 .3em 0;
+    font-size: 28px;
+}
+
+@mixin subheader--544 {
+    .subhead {
+        padding: 12px;
+    }
+}
+
+@mixin subheader--768 {
+    .subhead {
+        padding: 24px;
+    }
+    .subhead h1 {
+        font-size: 32px;
+    }
+    .codev-status {
+        display: table;
+    }
+    .codev-status span {
+        display: table-cell;
+    }
+    .codev-status span+span:not(:last-child) {
+        border-right: 1px solid #d1d9db;
+    }
+}
+
+@mixin subheader--992 {
+    .subhead {
+        padding: 36px;
+    }
+    .subhead h1 {
+        font-size: 40px;
+    }
+}
+
+@mixin subheader--1300 {
+    .subhead {
+        padding: 48px;
+    }
+    .subhead h1 {
+        font-size: 48px;
+    }
+}
+
+.subhead h1:only-child {
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.py-4 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.codev-status {
+    display: inline-block;
+    margin: 0 auto;
+    color: #7c9398;
+    font-size: .88em;
+}
+
+.codev-status span {
+    display: inline-block;
+    line-height: 1;
+    padding: 0.6em 0.8em;
+    font-size: 14px;
+}
+
+.codev-status strong {
+    color: #20515b;
+}
